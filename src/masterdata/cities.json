@@ -1,0 +1,427 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "cities": [
+      "Hyderabad",
+      "Visakhapatnam",
+      "Vijayawada",
+      "Guntur",
+      "Nellore",
+      "Tirupati",
+      "Kakinada",
+      "Rajahmundry",
+      "Anantapur",
+      "Chittoor",
+      "Kadapa",
+      "Srikakulam",
+      "West Godavari",
+      "East Godavari",
+      "Prakasam"
+    ]
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "cities": [
+      "Itanagar",
+      "Tawang",
+      "Ziro",
+      "Bomdila",
+      "Naharlagun",
+      "Pasighat",
+      "Aalo",
+      "Tezu",
+      "Namsai",
+      "Changlang"
+    ]
+  },
+  {
+    "state": "Assam",
+    "cities": [
+      "Guwahati",
+      "Dispur",
+      "Silchar",
+      "Dibrugarh",
+      "Jorhat",
+      "Tinsukia",
+      "Nagaon",
+      "Bongaigaon",
+      "Barpeta",
+      "Karimganj"
+    ]
+  },
+  {
+    "state": "Bihar",
+    "cities": [
+      "Patna",
+      "Gaya",
+      "Bhagalpur",
+      "Munger",
+      "Muzaffarpur",
+      "Darbhanga",
+      "Purnia",
+      "Katihar",
+      "Nalanda",
+      "Sasaram"
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "cities": [
+      "Raipur",
+      "Bilaspur",
+      "Durg",
+      "Korba",
+      "Jagdalpur",
+      "Rajnandgaon",
+      "Ambikapur",
+      "Janjgir",
+      "Kanker",
+      "Dantewada"
+    ]
+  },
+  {
+    "state": "Goa",
+    "cities": [
+      "Panaji",
+      "Margao",
+      "Vasco da Gama",
+      "Mapusa",
+      "Ponda",
+      "Cortalim",
+      "Sanguem",
+      "Quepem",
+      "Bicholim",
+      "Canacona"
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "cities": [
+      "Ahmedabad",
+      "Vadodara",
+      "Surat",
+      "Rajkot",
+      "Gandhinagar",
+      "Junagadh",
+      "Bhuj",
+      "Anand",
+      "Nadiad",
+      "Mehsana"
+    ]
+  },
+  {
+    "state": "Haryana",
+    "cities": [
+      "Chandigarh",
+      "Gurugram",
+      "Faridabad",
+      "Ambala",
+      "Hisar",
+      "Rohtak",
+      "Karnal",
+      "Panipat",
+      "Jind",
+      "Yamunanagar"
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "cities": [
+      "Shimla",
+      "Dharamshala",
+      "Mandi",
+      "Kullu",
+      "Solan",
+      "Hamirpur",
+      "Una",
+      "Bilaspur",
+      "Kangra",
+      "Chamba"
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "cities": [
+      "Ranchi",
+      "Jamshedpur",
+      "Dhanbad",
+      "Hazaribagh",
+      "Dumka",
+      "Giridih",
+      "Chaibasa",
+      "Bokaro",
+      "Deoghar",
+      "Jharia"
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "cities": [
+      "Bengaluru",
+      "Mysuru",
+      "Hubli",
+      "Belagavi",
+      "Dharwad",
+      "Shimoga",
+      "Mandya",
+      "Udupi",
+      "Chikkamagaluru",
+      "Tumakuru"
+    ]
+  },
+  {
+    "state": "Kerala",
+    "cities": [
+      "Thiruvananthapuram",
+      "Kochi",
+      "Kozhikode",
+      "Kannur",
+      "Palakkad",
+      "Kottayam",
+      "Thrissur",
+      "Ernakulam",
+      "Alappuzha",
+      "Wayanad"
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "cities": [
+      "Bhopal",
+      "Indore",
+      "Gwalior",
+      "Jabalpur",
+      "Ujjain",
+      "Sagar",
+      "Satna",
+      "Rewa",
+      "Khandwa",
+      "Khargone"
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "cities": [
+      "Mumbai",
+      "Pune",
+      "Nagpur",
+      "Nashik",
+      "Aurangabad",
+      "Thane",
+      "Solapur",
+      "Amravati",
+      "Jalgaon",
+      "Kolhapur"
+    ]
+  },
+  {
+    "state": "Manipur",
+    "cities": [
+      "Imphal",
+      "Churachandpur",
+      "Thoubal",
+      "Kakching",
+      "Jiribam",
+      "Senapati",
+      "Ukhrul",
+      "Tamenglong",
+      "Noney",
+      "Bishnupur"
+    ]
+  },
+  {
+    "state": "Meghalaya",
+    "cities": [
+      "Shillong",
+      "Tura",
+      "Jowai",
+      "Nongstoin",
+      "Barsora",
+      "Williamnagar",
+      "Baghmara",
+      "Mairang",
+      "Khliehriat",
+      "Resubelpara"
+    ]
+  },
+  {
+    "state": "Mizoram",
+    "cities": [
+      "Aizawl",
+      "Lunglei",
+      "Champhai",
+      "Serchhip",
+      "Mamit",
+      "Kolasib",
+      "Saiha",
+      "Lawngtlai",
+      "Hnahthial",
+      "Khawzawl"
+    ]
+  },
+  {
+    "state": "Nagaland",
+    "cities": [
+      "Kohima",
+      "Dimapur",
+      "Mokokchung",
+      "Wokha",
+      "Tuensang",
+      "Mon",
+      "Zunheboto",
+      "Phek",
+      "Longleng",
+      "Kiphire"
+    ]
+  },
+  {
+    "state": "Odisha",
+    "cities": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Rourkela",
+      "Berhampur",
+      "Sambalpur",
+      "Balasore",
+      "Khurda",
+      "Jeypore",
+      "Bhawanipatna",
+      "Baripada"
+    ]
+  },
+  {
+    "state": "Punjab",
+    "cities": [
+      "Chandigarh",
+      "Amritsar",
+      "Ludhiana",
+      "Jalandhar",
+      "Patiala",
+      "Mohali",
+      "Bathinda",
+      "Hoshiarpur",
+      "Fatehgarh Sahib",
+      "Rupnagar"
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "cities": [
+      "Jaipur",
+      "Udaipur",
+      "Jodhpur",
+      "Kota",
+      "Bikaner",
+      "Ajmer",
+      "Bhilwara",
+      "Sikar",
+      "Pali",
+      "Alwar"
+    ]
+  },
+  {
+    "state": "Sikkim",
+    "cities": [
+      "Gangtok",
+      "Namchi",
+      "Mangan",
+      "Gyalshing",
+      "Rongli",
+      "Yuksom",
+      "Rangpo",
+      "Jorethang",
+      "Singtam",
+      "Pakyong"
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "cities": [
+      "Chennai",
+      "Coimbatore",
+      "Madurai",
+      "Tiruchirappalli",
+      "Salem",
+      "Erode",
+      "Vellore",
+      "Tirunelveli",
+      "Thoothukudi",
+      "Kanchipuram"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "cities": [
+      "Hyderabad",
+      "Warangal",
+      "Nizamabad",
+      "Karimnagar",
+      "Khammam",
+      "Mahbubnagar",
+      "Adilabad",
+      "Nalgonda",
+      "Ramagundam",
+      "Jagtial"
+    ]
+  },
+  {
+    "state": "Tripura",
+    "cities": [
+      "Agartala",
+      "Udaipur",
+      "Sabroom",
+      "Kailashahar",
+      "Dharmanagar",
+      "Teliamura",
+      "Khowai",
+      "Ambassa",
+      "Sidhai",
+      "Mohanpur"
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "cities": [
+      "Lucknow",
+      "Kanpur",
+      "Agra",
+      "Varanasi",
+      "Allahabad",
+      "Meerut",
+      "Gorakhpur",
+      "Bareilly",
+      "Jhansi",
+      "Moradabad"
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "cities": [
+      "Dehradun",
+      "Haridwar",
+      "Nainital",
+      "Rishikesh",
+      "Roorkee",
+      "Haldwani",
+      "Kashipur",
+      "Rudrapur",
+      "Pithoragarh",
+      "Almora"
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "cities": [
+      "Kolkata",
+      "Siliguri",
+      "Durgapur",
+      "Asansol",
+      "Kharagpur",
+      "Howrah",
+      "Medinipur",
+      "Jalpaiguri",
+      "Bardhaman",
+      "Berhampur"
+    ]
+  }
+]

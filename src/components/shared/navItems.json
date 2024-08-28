@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "icon": "LayoutDashboard",
+    "label": "Dashboard",
+    "path": "/app/home",
+    "roles": ["Admin", "User"]
+  },
+  {
+    "id": 2,
+    "icon": "Table",
+    "label": "Timesheet",
+    "path": "/app/timesheet",
+    "roles": ["Admin", "User"]
+  },
+  {
+    "id": 3,
+    "icon": "Building2",
+    "label": "Organization",
+    "path": "/app/org",
+    "roles": ["Admin", "User"]
+  },
+  {
+    "id": 4,
+    "icon": "ShieldEllipsis",
+    "label": "Admin Controls",
+    "path": "/app/users",
+    "roles": ["Admins"]
+  },
+  {
+    "id": 5,
+    "icon": "FolderCode",
+    "label": "Dev Controls",
+    "path": "/app/dev",
+    "roles": ["Admins"]
+  },
+  {
+    "id": 6,
+    "icon": "Settings",
+    "label": "Settings",
+    "path": "/app/settings",
+    "roles": ["Admins"]
+  }
+]

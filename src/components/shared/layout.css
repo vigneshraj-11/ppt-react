@@ -1,0 +1,194 @@
+.sidebar {
+  width: 60px; /* Minimized width */
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  border-right: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.main-content {
+  margin-left: 230px; /* Same as sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust main content when sidebar is minimized */
+.sidebar.minimized + .main-content {
+  margin-left: 60px;
+}
+
+.sidebar.expanded {
+  width: 220px; /* Expanded width */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width to ensure centering */
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Fixed width for icon container */
+  transition: margin-right 0.3s ease-in-out;
+  margin-left: 5px;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0; /* Hide text initially */
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  transform: translateX(-20px); /* Hide the text off-screen initially */
+}
+
+.sidebar.expanded .text {
+  opacity: 1; /* Show text when expanded */
+  transform: translateX(0); /* Slide the text into view */
+  margin-left: 10px; /* Space between icon and text */
+}
+
+.sidebar.minimized .nav-item:hover .text {
+  opacity: 1; /* Show text on hover even if minimized */
+  transform: translateX(0); /* Slide the text into view on hover */
+}
+
+.nav-item:hover .icon-container {
+  margin-right: 10px; /* Space between icon and text when expanded */
+  color: rgb(7, 130, 245);
+}
+
+.sidebar.expanded .user-info .logout-button {
+  display: block; /* Show logout button when expanded */
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.search-container {
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.search-input {
+  width: 30%; /* Adjust width as needed */
+  height: 40px;
+  border-radius: 30px;
+  padding: 8;
+  border: 1px solid #c3c3c3;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  line-height: 65px; /* Adjust based on your input field height */
+}
+
+.search-input::placeholder {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  transform: translateY(100%);
+  animation: scroll-up 3s linear infinite;
+}
+
+.search-input:focus {
+  outline: none; /* Removes the default focus outline in most browsers */
+}
+
+.search-input::placeholder:nth-child(2) {
+  animation-delay: 1.5s; /* Adjust based on timing */
+}
+
+.nav-item.active {
+  background-color: rgba(0, 123, 255, 0.1);
+  border-left: 4px solid #007bff;
+}
+
+/* UploadStyles.css */
+.custom-upload-dragger {
+  background-color: #f9f9f9;
+  border: 2px dashed #1890ff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.custom-upload-dragger:hover {
+  background-color: #e6f7ff;
+  border-color: #40a9ff;
+}
+
+.custom-upload-icon {
+  font-size: 32px;
+  color: #1890ff;
+}
+
+.custom-upload-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #595959;
+}
+
+.custom-upload-hint {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.form-container {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.6s ease-in-out,
+    opacity 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
+}
+
+.slide-down {
+  max-height: 800px; /* Adjust this value based on the form height */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+}
