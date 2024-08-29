@@ -1,18 +1,35 @@
 # Stage 1: Build the Vite app
-FROM node as vite-app
+FROM node:20-alpine as build-stage
 
-WORKDIR /app/client
-COPY ./client . 
+# Set the working directory
+WORKDIR /app
 
+# Copy the package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install dependencies
 RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the app
 RUN npm run build
 
 # Stage 2: Serve the app using NGINX
 FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/html
-COPY --from=vite-app /app/client/dist .
+# Copy the custom NGINX configuration (optional)
+COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+# Remove default NGINX static assets
+RUN rm -rf /usr/share/nginx/html/*
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+# Copy the React build from the previous stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+
+# Expose port 7124 to the outside world
+EXPOSE 7124
+
+# Command to start NGINX
+CMD ["nginx", "-g", "daemon off;"]
