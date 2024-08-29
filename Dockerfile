@@ -6,10 +6,12 @@ COPY package.json .
 
 RUN npm install
 
+RUN npm i -g serve
+
 COPY . .
 
-ENV PORT=7124
+RUN npm run build
 
 EXPOSE 7124
 
-CMD [ "npm", "run", "dev"]
+CMD [ "serve", "-s", "dist" ]
