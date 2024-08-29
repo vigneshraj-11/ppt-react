@@ -1,5 +1,5 @@
 # Stage 1: Build the Vite app
-FROM node:20-alpine as build-stage
+FROM node:18-alpine as build-stage
 
 # Set the working directory
 WORKDIR /app
@@ -18,9 +18,6 @@ RUN npm run build
 
 # Stage 2: Serve the app using NGINX
 FROM nginx:alpine
-
-# Copy the custom NGINX configuration (optional)
-COPY nginx.conf /etc/nginx/nginx.conf
 
 # Remove default NGINX static assets
 RUN rm -rf /usr/share/nginx/html/*
