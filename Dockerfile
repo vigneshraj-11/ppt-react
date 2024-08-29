@@ -16,7 +16,7 @@ COPY . .
 # Build the app
 RUN npm run build
 
-# Stage 2: Serve the app using a simple static server
+# Stage 2: Serve the app using serve
 FROM node:20-alpine
 
 # Install the serve package globally
