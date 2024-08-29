@@ -1,13 +1,21 @@
-FROM node:20-alpine
+FROM node as vite-app
 
-WORKDIR /app
+WORKDIR /app/client
+COPY ./client .
 
-COPY package.json .
+RUN ["npm", "i"]
+RUN ["npm", "run", "build"]
 
-RUN npm install
+FROM nginx:alpine
 
-COPY . .
+WORKDIR /usr/share/nginx/
 
-EXPOSE 7124
+RUN rm -rf html
+RUN mkdir html
 
-CMD [ "npm", "run", "dev" ]
+WORKDIR /
+
+COPY ./nginx/nginx.conf /etc/nginx
+COPY --from=vite-app ./app/client/dist /usr/share/nginx/html
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
