@@ -1,21 +1,18 @@
+# Stage 1: Build the Vite app
 FROM node as vite-app
 
 WORKDIR /app/client
-COPY ./client .
+COPY ./client . 
 
-RUN ["npm", "i"]
-RUN ["npm", "run", "build"]
+RUN npm install
+RUN npm run build
 
+# Stage 2: Serve the app using NGINX
 FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/
+WORKDIR /usr/share/nginx/html
+COPY --from=vite-app /app/client/dist .
 
-RUN rm -rf html
-RUN mkdir html
-
-WORKDIR /
-
-COPY ./nginx/nginx.conf /etc/nginx
-COPY --from=vite-app ./app/client/dist /usr/share/nginx/html
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
